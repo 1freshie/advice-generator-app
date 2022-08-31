@@ -1,38 +1,103 @@
-.App {
+/* .App {
+  margin: 0 auto;
+  width: min(31.25rem, 100%);
+  max-width: 90rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: .625rem;
+  padding: 1.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.advice__id {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: .25rem;
+  font-weight: bold;
+  font-size: .75rem;
+  padding: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.advice__text {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.75rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.advice__button {
+  width: 40%;
+  padding: .3125rem;
+  color: hsl(217, 19%, 24%);
+  border-radius: .625rem;
+  background-color: hsl(150, 100%, 66%);
+  letter-spacing: .25rem;
+  border: 0rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.advice__button:active {
+  box-shadow: 0 0 0.2rem 0.2rem hsl(150, 100%, 66%);
+} */
+
+.App {
+  max-width: 1440px;
+  margin: auto;
+  width: min(560px, 100%);
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: 100%;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.advice__id {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advice__text {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.advice__divider {
+  background-image: url('../public/images/pattern-divider-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advice__button {
+  border-radius: 50%;
+  color: hsl(150, 100%, 66%);
+  background-color: hsl(217, 19%, 24%);
+  background-image: url('./images/icon-dice.svg');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
 }
