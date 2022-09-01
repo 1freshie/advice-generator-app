@@ -57,6 +57,10 @@
   margin: auto;
   width: min(560px, 100%);
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -88,16 +92,25 @@
 }
 
 .advice__divider {
-  background-image: url('../public/images/pattern-divider-desktop.svg');
+  background-image: url('./images/pattern-divider-desktop.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .advice__button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  border: 0;
   border-radius: 50%;
-  color: hsl(150, 100%, 66%);
-  background-color: hsl(217, 19%, 24%);
-  background-image: url('./images/icon-dice.svg');
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
+  background-color: hsl(150, 100%, 66%);
+  color: hsl(217, 19%, 24%);
+  
+}
+
+.advice__button:active {
+  box-shadow: 0 0 0.2rem 0.2rem hsl(150, 100%, 66%);
 }

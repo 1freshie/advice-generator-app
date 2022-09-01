@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 import './App.css';
+import dividerSVG from './images/pattern-divider-desktop.svg';
+import diceSVG from './images/icon-dice.svg';
 
 const App: React.FunctionComponent = () => {
   const [advice, setAdvice] = useState({
@@ -45,12 +47,16 @@ const App: React.FunctionComponent = () => {
         ) : (
           <p className="advice__text">Loading...</p>
         )}
-        <div className='advice__divider'></div>
+        <div className='advice__divider'>
+          <img src={dividerSVG} alt="divider-icon" />
+        </div>
       </div>
-        <button className="advice__button" onClick={generateAdviceHandler}>
+        {/* <button className="advice__button" onClick={generateAdviceHandler}>
         NEW ADVICE
-      </button>
-      {/* <div className="advice__button">ASDASD</div> */}
+      </button> */}
+      <div className="advice__button" onClick={generateAdviceHandler}>
+        <img src={diceSVG} alt="dice-icon" />
+      </div>
     </div>
   );
 };
